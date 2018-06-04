@@ -1,0 +1,9 @@
+1.install osxfuse/osxfuse
+https://osxfuse.github.io/
+2.install https://github.com/osxfuse/osxfuse/wiki/NTFS-3G
+   brew install ntfs-3g
+
+3. mount
+diskutil list 命令来查看是哪个盘才是NTFS
+sudo mkdir /Volumes/NTFS
+sudo /usr/local/bin/ntfs-3g /dev/disk1s1 /Volumes/NTFS
